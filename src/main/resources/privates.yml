@@ -1,0 +1,79 @@
+settings:
+  #Количество возможных приватов блоком
+  private_count:
+    default: 3
+    palach: 5
+    monarch: 10
+  #Звук при создании привата
+  set_sound: "block.amethyst_block.resonate"
+  #Флаги, которые выставятся на allow при создании привата
+  allow-flags: ["tnt", "respawn-anchors", "creeper-explosion", "pvp", "potion-splash", "other-explosion"]
+  #Флаги, которые выставятся на deny при создании привата
+  deny-flags: ["damage-animals", "interact"]
+  bossbar:
+    title: "&cРейд-режим"
+  custom_tnt:
+    name: "&cX - Динамит"
+    lore:
+      - "&eВзрывает обсидиан"
+    #Шанс взрыва твердых блоков (Обсидиан, плач. обсидиан, древние обломки)
+    chance: 30
+
+  gold_block:
+    radius: 3
+    hologram:
+      - "&eЗолотой приват"
+      - "&aВладелец {owner}"
+      - "&eУчастников {members}"
+  iron_block:
+    radius: 5
+    hologram:
+      - "&eЖелезный приват"
+      - "&aВладелец {owner}"
+      - "&eУчастников {members}"
+  diamond_block:
+    radius: 10
+    hologram:
+      - "&eАлмазный приват"
+      - "&aВладелец {owner}"
+      - "&eУчастников {members}"
+  netherite_block:
+    radius: 20
+    hologram:
+      - "&eНезеритовый приват"
+      - "&aВладелец {owner}"
+      - "&eУчастников {members}"
+
+messages:
+  psToggleOn: "&aТеперь вы сможете устанавливать блоки"
+  psToggleOff: "&aСейчас вы будете устанавливать приваты"
+  noPlayer: "&cИгрок оффлайн"
+  noPrivate: "&cВы не в привате"
+  noPrivateList: "&cУ вас нет приватов"
+  psAddToOwner: "&aВы добавили игрока {target} в регион"
+  psAddToReceiver: "&aИгрок {player} добавил вас в регион"
+  psAddMirror: "&cНельзя добавить самого себя"
+  psRemoveToOwner: "&aВы удалили игрока {target} из региона"
+  psAddAlreadyMember: "&cИгрок уже в привате"
+  psRemoveMirror: "&cНельзя удалить себя из привата"
+  notMember: "&cИгрок не находится в привате"
+  privatesLimit: "&cУ вас лимит приватов! {limit}"
+  privatesConflict: "&cВаш приват пересекает чужой приват"
+  privateCreate: "&aВы успешно установили приват"
+  privateRemove: "&aВы успешно удалили приват"
+  privateWarning: "&cВаша территория под угрозой! Координаты {x} {y} {z}"
+  reload: "&aПриваты перезагружены"
+  noPerm: "&cНет прав"
+  help:
+    - "&e/ps add ник - добавить игрока в приват (стойте в привате)"
+    - "&e/ps remove ник - удалить игрока из привата (стойте в привате)"
+    - "&e/ps toggle - переключение режима установки привата"
+    - "&e/ps list - список приватов"
+  list:
+    header:
+      - "---------------------------"
+      - " "
+    format: "&8• &fПриват &e{id} &7(&b{members} игроков&7)"
+    footer:
+      - " "
+      - "---------------------------"

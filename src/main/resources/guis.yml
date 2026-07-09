@@ -1,0 +1,255 @@
+mainClanExists:
+  title: "&0Кланы"
+  size: 45
+  items:
+    filler1:
+      material: BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [0-1, 7-9, 17, 27, 35-37, 43-44]
+    filler2:
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [2-6, 10-11, 15-16, 18, 26, 28-29, 33-34, 38-39, 41-42]
+    back:
+      material: PLAYER_HEAD
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ
+      name: "&cНазад"
+      type: back
+      slots: 40
+    members:
+      material: PURPLE_WOOL
+      name: "&aУчастники"
+      type: membersMenu
+      slots: 19
+    bases:
+      material: PINK_WOOL
+      name: "&aБазы"
+      type: basesMenu
+      slots: 21
+    potions:
+      material: netherite_upgrade_smithing_template
+      name: "&aБафы"
+      type: potionsMenu
+      slots: 22
+      item_flags:
+        - HIDE_ADDITIONAL_TOOLTIP
+    locator:
+      slots: 23
+      type: locator
+      active:
+        name: "&eВключить свечение в клане"
+        material: PLAYER_HEAD
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ
+        lore:
+          - "&eАктивно"
+      inactive:
+        name: "&eВключить свечение в клане"
+        material: PLAYER_HEAD
+        value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM1NzRhMWI0ZGFmNjk3YzVhYzBiNWQ4NzBlMjkxNzQ1YjFkMjM4OGE4NzA0YmYyODA0ZjA0ZGU0M2VkOGQ1YiJ9fX0=
+        lore:
+          - "&cНеактивно"
+    statistic:
+      material: YELLOW_WOOL
+      name: "&aСтатистика клана"
+      slots: 25
+      lore:
+        - "&e{kills} киллов"
+        - "&e{deaths} смертей"
+        - "&e{hours} часов наиграно"
+        - "&e{balance} монет в общем"
+        - "&e{members} участников"
+mainClanNotExists:
+  title: "&0Кланы"
+  size: 9
+  items:
+    barrier:
+      material: barrier
+      name: "&cУ вас нет клана"
+      slots: 4
+membersMenu:
+  title: "&0Участники клана"
+  memberSlots: [11,12,13,14,15,20,21,22,23,24,29,30,31,32,33]
+  size: 54
+  items:
+    filler1:
+      material: BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [0-1, 7-9, 17, 36, 44-46, 52-53]
+    filler2:
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [2-6, 10, 16, 18-19, 25-28, 34-35, 37, 43, 47-48, 50-51]
+    back:
+      material: PLAYER_HEAD
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ
+      name: "&cНазад"
+      type: back
+      slots: 49
+basesMenu:
+  title: "&0Базы клана"
+  size: 45
+  items:
+    filler1:
+      material: BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [0-1, 7-9, 17, 27, 35-37, 43-44]
+    filler2:
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [2-6, 10, 16, 18, 26, 28, 34, 38-39, 41-42]
+    back:
+      material: PLAYER_HEAD
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ
+      name: "&cНазад"
+      type: back
+      slots: 40
+    base1:
+      active:
+        material: LIME_WOOL
+        name: "&aБаза ({baseName})"
+        lore:
+         - "&eНажмите, чтобы телепортироваться"
+      slots: 20
+    base2:
+      price: 1000
+      active:
+        material: LIME_WOOL
+        name: "&aБаза ({baseName})"
+        lore:
+          - "&eНажмите, чтобы телепортироваться"
+      inactive:
+        material: RED_WOOL
+        name: "&aБаза #2"
+        lore:
+          - "&cЦена 1000, нажмите чтобы купить"
+      slots: 21
+    base3:
+      price: 5000
+      active:
+        material: LIME_WOOL
+        name: "&aБаза ({baseName})"
+        lore:
+          - "&eНажмите, чтобы телепортироваться"
+      inactive:
+        material: RED_WOOL
+        name: "&aБаза #3"
+        lore:
+          - "&cЦена 5000, нажмите чтобы купить"
+      slots: 22
+    base4:
+      price: 15000
+      active:
+        material: LIME_WOOL
+        name: "&aБаза ({baseName})"
+        lore:
+          - "&eНажмите, чтобы телепортироваться"
+      inactive:
+        material: RED_WOOL
+        name: "&aБаза #4"
+        lore:
+          - "&cЦена 15000, нажмите чтобы купить"
+      slots: 23
+    base5:
+      price: 50000
+      active:
+        material: LIME_WOOL
+        name: "&aБаза ({baseName})"
+        lore:
+          - "&eНажмите, чтобы телепортироваться"
+      inactive:
+        material: RED_WOOL
+        name: "&aБаза #5"
+        lore:
+          - "&cЦена 50000, нажмите чтобы купить"
+      slots: 24
+potionsMenu:
+  title: "&0Бафы"
+  size: 45
+  items:
+    filler1:
+      material: BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [0-1, 7-9, 11-15, 17,19,25, 27,29-33, 35-37, 43-44]
+
+    filler2:
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: " "
+      slots: [2-6, 10, 16, 18, 20, 24, 26, 28, 34, 38-39, 41-42]
+
+    back:
+      material: PLAYER_HEAD
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ
+      name: "&cНазад"
+      type: back
+      slots: 40
+
+    potions1:  #Эффект;уровень
+      price: 100
+      active:
+        material: POTION
+        potion-effects:
+          - SPEED;60;1
+        #Ниже эффект который будет выдаваться, когда купят
+        effect-type: speed;1
+        name: "&aСкорость"
+        lore:
+          - "&aКуплена"
+        item_flags:
+          - HIDE_ADDITIONAL_TOOLTIP
+      inactive:
+        material: POTION
+        potion-effects:
+          - SPEED;60;1
+        name: "&aСкорость"
+        lore:
+          - "&eЦена 100 рублей"
+        item_flags:
+          - HIDE_ADDITIONAL_TOOLTIP
+      slots: 21
+    potions2:  #Эффект;уровень
+      price: 100
+      active:
+        material: POTION
+        potion-effects:
+          - strength;60;2
+        effect-type: strength;2
+        name: "&aСила II"
+        lore:
+          - "&aКуплена"
+        item_flags:
+          - HIDE_ADDITIONAL_TOOLTIP
+      inactive:
+        material: POTION
+        potion-effects:
+          - strength;60;2
+        name: "&aСила II"
+        lore:
+          - "&eЦена 100 рублей"
+        item_flags:
+          - HIDE_ADDITIONAL_TOOLTIP
+      slots: 22
+    potions3:  #Эффект;уровень
+      price: 100
+      active:
+        material: POTION
+        potion-effects:
+          - fire_resistance;60;1
+        effect-type: fire_resistance;1
+        name: "&aОгнестойкость"
+        lore:
+          - "&aКуплена"
+        item_flags:
+          - HIDE_ADDITIONAL_TOOLTIP
+      inactive:
+        material: POTION
+        potion-effects:
+          - fire_resistance;60;1
+        name: "&aОгнестойкость"
+        lore:
+          - "&eЦена 100 рублей"
+        item_flags:
+          - HIDE_ADDITIONAL_TOOLTIP
+      slots: 23
+
+
+

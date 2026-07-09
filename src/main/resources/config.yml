@@ -1,0 +1,143 @@
+clanSettings:
+  #Разрешенные символы для названия клана
+  allowedSymbols: '[0-9а-яА-Яa-zA-Z_&-]*'
+  #Разрешенные символы для названия баз
+  allowedSymbolsForBases: '[0-9а-яА-Яa-zA-Z_-]*'
+  #Цена создания клана
+  createPrice: 500
+  #Минимум символов для названия клана
+  minSymbols: 3
+  #Максимум символов для названия клана
+  maxSymbols: 9
+  #Формат /clan msg
+  clanMsgFormat: "{clan} {player}: {message}"
+  #Максимальное кол-во участников в клане
+  maxMembers: 10
+  #Плейсхолдер, когда у игрока нет клана
+  placeholderNoClan: "&cНету"
+  #В каких мирах устанавливать базу запрещено
+  blacklistWorlds: ["custom_end", "custom_nether"]
+  #Команды с консоли при нажатии на кнопку назад в главном меню
+  backCommand:
+    - dm open menu %player%
+  teleport:
+    groups:
+      default: 7
+      palach: 5
+      monarch: 3
+    bossbar:
+      enabled: true
+      title: "&6&lТЕЛЕПОРТАЦИЯ &7- &e%seconds% &7сек."
+      style: "SEGMENTED_10"
+      colors:
+        high: "GREEN"
+        medium: "YELLOW"
+        low: "RED"
+    title: "&aУспешно"
+huntSettings:
+  #Включена ли игра?
+  enable: true
+  #Время начала ивента
+  time: "15:00"
+  #Звук при старте ивента
+  startSound: "block.amethyst_block.resonate"
+  #Команды, которые запрещены для цели во время ивента
+  blockedCommands:
+    - "/pay"
+    - "/tpa"
+    - "/warp"
+    - "/spawn"
+  blacklistWorld: ["world"]
+  #За сколько секунд до охоты делать анонс
+  secondsBeforeAnnounce: 180
+  reward:
+    killTarget: 50000
+    winTarget: 50000
+  bossbar:
+    #{time} - формат HH:mm
+    title: "&cДо конца охоты {time}"
+
+messages:
+  alreadyInClan: "&cВы уже состоите в клане"
+  minLimit: "&cМинимальная длина - 3 символа"
+  maxLimit: "&cМаксимальная длина - 9 символов"
+  badSymbols: "&cНедопустимые символы"
+  noMoney: "&cНе хватает денег для создания клана"
+  createClan: "&aКлан {clan}&a успешно создан"
+  noClan: "&cУ вас нету клана"
+  onlyOwnerCanInvite: "&cТолько владелец может приглашать в клан"
+  noPlayer: "&cИгрок не найден"
+  clanAlreadyExists: "&cКлан с таким названием уже существует"
+  inviteSend: "&aВы отправили приглашение в клан игроку {target}"
+  inviteReceive: "&aВас пригласили в клан {clan}&a, пропишите /clan join {cleanName}"
+  joinEmpty: "&cУ вас нет приглашений"
+  clanFilled: "&cКлан укомплектован"
+  clanJoin: "&aВы вступили в клан {clan}"
+  clanMsgJoin: "&aИгрок {player} вступил в клан"
+  cantLeave: "&cЧтобы выйти из клана - удалите его"
+  clanLeave: "&aВы покинули клан"
+  clanMsgLeave: "&aИгрок {player} вышел с клана"
+  onlyOwnerCanKick: "&cТолько владелец может кикать"
+  unknownPlayer: "&cИгрок не в вашем клане"
+  clanKick: "&cВас выгнали с клана"
+  clanMsgKick: "&c{player} был выгнан с клана"
+  onlyOwnerCanDisband: "&cТолько владелец может удалить клан"
+  clanMsgDisband: "&cВаш клан был удален"
+  clanDisbandConfirm: "&cНапишите команду еще раз для удаления"
+  onlyOwnerCanName: "&cТолько владелец может менять название клана"
+  clanName: "&aВы изменили название клана на {clan}"
+  clanMsgName: "&eВладелец клана изменил название клана на {clan}"
+  invalidBaseName: "&cНекорректное название для базы"
+  maxBases: "&cУ вас максимум баз!"
+  clanSetBase: "&aБаза установлена"
+  clanRemoveBase: "&cБаза удалена"
+  unknownBase: "&cБаза не найдена"
+  teleportCancel: "&cТелепорт отменен, вы вошли в бой"
+  teleportStart: "&e⏳ Телепортация через &65 &eсек... &7(Не получайте и не наносите урон)"
+  noMoneyForBase: "&cУ вас не хватает денег"
+  noPointsForPotions: "&cУ вас не хватает рублей"
+  effectPurchase: "&aЭффект куплен"
+  clanMsgGlowEnable: "&aСвечение в клане включено"
+  clanMsgGlowDisable: "&cСвечение в клане выключено"
+  noPerm: "&cНет прав"
+  reload: "&aПлагин перезагружен"
+  baseCantBuy: "&cСначала купите предыдущую базу!"
+  blacklistWorld: "В этом мире запрещено устанавливать базу"
+  onlyOwnerCanPvpToggle: "Только владелец может"
+  clanPvpEnable: "&aКлановое пвп ВКЛ"
+  clanPvpDisable: "&aКлановое пвп &cВЫКЛ"
+
+  #GREATHUNT
+
+  titleToHunters: "&cУбить {target}"
+  subtitleToHunters: "&eНаграда 50000$"
+  instruction: "&aВас выбрали целью, если вы выйдете с сервера, вы будете убиты и потеряете 50% монет"
+  titleToTarget: "&aНа Вас открыта охота!"
+  subtitleToTarget: "&cБерегись"
+  titleToTargetBlockCommand: "&aНа Вас открыта охота!"
+  subtitleToTargetBlockCommand: "&cКоманда недоступна"
+  coordinates: "&aПомеченный {target} находится в мире {world} на координатах {x} {y} {z}"
+  titleTargetDeath: "&cОхота окончена!"
+  subtitleTargetDeath: "&c{target} убит"
+  titleTargetWin: "&a{target} победил"
+  subtitleTargetWin: "&aв великой охоте!"
+  titleTargetLeave: "&cОхота окончена!"
+  subtitleTargetLeave: "&cЦель вышла с сервера"
+  cannotKickClanTarget: "&cНельзя кикнуть человека с меткой"
+  noOnline: "&cИвент отменился, не хватает игроков"
+  targetLose: "&cЦель {target} проиграл, его убил {player}"
+  targetWin: "&aЦель {target} победил в великой охоте"
+  enable: "&aИгра включена"
+  disable: "&cИгра отключена"
+  titleTargetDeathNoKiller: "&cОхота окончена!"
+  subtitleTargetDeathNoKiller: "&cцель мертва"
+  announce:
+    - ""
+    - "Начало через 3 минуты"
+    - ""
+
+
+
+
+
+

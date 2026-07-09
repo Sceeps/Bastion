@@ -1,0 +1,26 @@
+# Build
+.gradle/
+build/
+out/
+bin/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local
+libs/
+_build-libs/
+*.log
+run/

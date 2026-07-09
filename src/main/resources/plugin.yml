@@ -1,0 +1,24 @@
+name: Bastion
+version: '1.0-SNAPSHOT'
+main: dev.portfolio.bastion.Bastion
+api-version: '1.21'
+description: Кланы, приваты WorldGuard, GreatHunt
+depend: [WorldEdit, WorldGuard, Vault, PlayerPoints, PlaceholderAPI, ProtocolLib, DecentHolograms, LuckPerms]
+commands:
+  clan:
+  base:
+  delbase:
+  setbase:
+  ps:
+  ghreload:
+  ghswitch:
+permissions:
+  bastion.reload:
+    description: Перезагрузка конфигов Bastion
+    default: op
+  greathunt.reload:
+    description: Перезагрузка GreatHunt
+    default: op
+  greathunt.switch:
+    description: Вкл/выкл GreatHunt
+    default: op
